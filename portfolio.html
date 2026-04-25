@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Futuristic Portfolio</title>
+   <link rel="stylesheet" href="style.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+ </head>
+ <body>
+   <div class="hero-overlay" aria-hidden="true"></div>
+    <header class="top-nav">
+      <div class="logo">Welcome</div>
+     <nav>
+       <a href="#home" class="nav-link active">Home</a>
+       <a href="#about" class="nav-link">About</a>
+       <a href="#projects" class="nav-link">Projects</a>
+       <a href="#skills" class="nav-link">Skills</a>
+       <a href="#contact" class="nav-link">Contact</a>
+     </nav>
+    <button id="musicToggle" class="music-btn" aria-label="Play futuristic background music">Play Music</button>
+   </header>
+
+   <main class="scroll-container" id="scrollContainer">
+     <section id="home" class="page page-home" data-title="Home">
+       <div class="content-wrap">
+         <p class="eyebrow">Welcome to my Portfolio</p>
+        <h1 class="matrix-name">I am <span>TEJAS SRIVASTAVA</span></h1>
+         <p class="subtitle">Innovating at the intersection of design, code, and space-age imagination.</p>
+         <a href="#about" class="cta">Explore My Journey</a>
+       </div>
+     </section>
+
+     <section id="about" class="page page-about" data-title="About">
+       <div class="content-wrap">
+         <h2>About Me</h2>
+         <div class="about-content">
+           <img src="My Profile pic.jpeg" alt="Tejas Srivastava Profile Picture" class="profile-pic">
+           <div class="about-text">
+             <p>I craft futuristic experiences in web apps, blending clean visuals with powerful interactions. I believe every product should feel like a portal into the future.</p>
+             <ul>
+               <li>Mission: simplify complexity through elegant code</li>
+               <li>Vision: build interfaces that are human, intelligent, and immersive</li>
+               <li>Values: speed, clarity, innovation</li>
+             </ul>
+             <button id="read-about" class="read-btn">🔊 Read Aloud</button>
+           </div>
+         </div>
+       </div>
+     </section>
+
+     <section id="projects" class="page page-projects" data-title="Projects">
+       <div class="content-wrap">
+         <h2>Featured Projects</h2>
+         <div class="cards">
+           <article class="card">
+             <h3>Neon Space Dashboard</h3>
+             <p>A responsive control panel concept with realtime data visualization and AR-ready UI components.</p>
+           </article>
+           <article class="card">
+             <h3>Quantum Commerce UI</h3>
+             <p>A futuristic e-commerce flow with machine learning personalization and immersive checkout experience.</p>
+           </article>
+           <article class="card">
+             <h3>AI-Assisted Workshop</h3>
+             <p>An interactive platform for designing on-the-fly prototypes with AI guidance and collaboration mode.</p>
+           </article>
+         </div>
+       </div>
+     </section>
+
+     <section id="skills" class="page page-skills" data-title="Skills">
+       <div class="content-wrap">
+         <h2>Core Skills</h2>
+         <div class="skill-grid">
+           <div class="skill">HTML & CSS (Responsive, Grid, Animations)</div>
+           <div class="skill">JavaScript (ES6+, React, Three.js)</div>
+           <div class="skill">UX/UI Design (Figma, Motion, Voice/UI)</div>
+           <div class="skill">Backend & APIs (Node.js, Express, Firebase)</div>
+           <div class="skill">Data Science & ML (Python, TensorFlow, NLP)</div>
+         </div>
+       </div>
+     </section>
+
+     <section id="contact" class="page page-contact" data-title="Contact">
+       <div class="content-wrap">
+         <h2>Contact</h2>
+         <p>Ready to build something futuristic together? Let’s connect.</p>
+         <div class="contact-grid">
+           <div><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></div>
+          <div><strong></strong> <a href="https://www.linkedin.com/in/tejas-srivastava-6aba101ab" target="_blank" rel="noreferrer">My LinkedIn</a></div>
+           <div><strong>GitHub:</strong> <a href="https://github.com" target="_blank" rel="noreferrer">github.com/yourname</a></div>
+           <div><strong>Twitter:</strong> <a href="https://twitter.com" target="_blank" rel="noreferrer">@yourhandle</a></div>
+         </div>
+       </div>
+     </section>
+   </main>
+
+   <div class="scroll-indicator" id="scrollIndicator">
+     <span class="dot active" data-target="home"></span>
+     <span class="dot" data-target="about"></span>
+     <span class="dot" data-target="projects"></span>
+     <span class="dot" data-target="skills"></span>
+     <span class="dot" data-target="contact"></span>
+   </div>
+
+   <script src="script.js"></script>
+ </body>
+</html>
